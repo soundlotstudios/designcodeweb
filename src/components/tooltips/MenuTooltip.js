@@ -36,6 +36,6 @@ const Wrapper = styled.div`
   visibility: ${props => (props.isOpen ? "visible" : "hidden")};
   transform: ${props =>
     props.isOpen
-      ? "skewY(0) rotate(0) translateY(0)"
+      ? "skewY(0deg) rotate(0deg) translateY(0px)"
       : "skewY(-5deg) rotate(5deg) translateY(-30px)"};
 `

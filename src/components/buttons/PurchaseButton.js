@@ -32,8 +32,8 @@ const Wrapper = styled.div`
   border-radius: 20px;
   display: grid;
   grid-template-columns: 53px auto;
-  justify-content: start;
   align-items: center;
+  gap: 20px;
 
   *,
   & {
@@ -52,6 +52,11 @@ const Wrapper = styled.div`
   }
 `
 
+const TextWrapper = styled.div`
+  display: grid;
+  gap: 4px;
+`
+
 const Title = styled(Caption2)`
   color: black;
 `
@@ -59,6 +64,21 @@ const Title = styled(Caption2)`
 const Subtitle = styled(SmallText)`
   color: black;
   opacity: 0.7;
+`
+
+const Icon = styled.img`
+  width: 29px;
+  height: 29px;
+`
+
+const Ring = styled.img`
+  position: absolute;
+  top: -15px;
+  left: -16px;
+
+  ${Wrapper}:hover & {
+    transform: rotate(30deg) scale(1.2) translate(1px, 1px);
+  }
 `
 
 const IconWrapper = styled.div`
@@ -69,28 +89,10 @@ const IconWrapper = styled.div`
   display: grid;
   justify-content: center;
   align-content: center;
+  justify-self: center;
   position: relative;
 
   ${Wrapper}:hover & {
-    filter: hue-rotate(10deg) brightness(100%) saturate(120%);
-  }
-`
-
-const Icon = styled.img`
-  width: 29px;
-  height: 29px;
-`
-const TextWrapper = styled.div`
-  display: grid;
-  gap: 4px;
-`
-
-const Ring = styled.img`
-  position: absolute;
-  top: -15px;
-  left: -16px;
-
-  ${Wrapper}:hover & {
-    transform: rotate(30deg) scale(1.2) translate(1px, 1px);
+    filter: hue-rotate(10deg) brightness(150%) saturate(120%);
   }
 `
