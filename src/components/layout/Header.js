@@ -13,7 +13,6 @@ export default function Header() {
   function handleClick(event) {
     setIsOpen(!isOpen)
     event.preventDefault()
-    // console.log(event)
   }
   //
   function handleClickOutside(event) {
